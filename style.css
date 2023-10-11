@@ -1,0 +1,667 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: white;
+}
+
+
+.container {
+    display: block;
+    padding: 25px;
+    position: absolute;
+    margin-left: 27%;
+    flex-wrap: wrap;
+}
+
+.container h3 {
+    padding: 20px;
+}
+
+.container button {
+    margin-top: 25px;
+    width: 120px;
+    padding: 10px;
+    border: 1px solid red;
+    background: red;
+    transition: all ease 0.5s;
+    color: white;
+    font-size: 18px;
+}
+
+.container button:hover {
+    background: transparent;
+    border: 1px solid red;
+    color: red;
+}
+
+.container input {
+    margin-top: 20px;
+    width: 600px;
+    padding: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+
+.container~input {
+    border: none;
+}
+
+.popup {
+    width: 600px;
+    padding: 20px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-top: 100px;
+    margin-left: 28%;
+    display: none;
+    position: absolute;
+    transition: all ease 1s;
+    z-index: 99;
+    background: rgb(100, 100, 241);
+}
+
+.popup i {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 550px;
+    font-size: 25px;
+    color: rgb(82, 80, 80);
+    transition: all ease 0.5s;
+}
+
+.popup i:hover {
+    color: black;
+}
+
+.popup p {
+    font-size: 20px;
+    padding: 15px;
+    color: white;
+}
+
+@media (max-width: 300px) {
+    html {
+        font-size: 12px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .container {
+        margin-top: 100px;
+        display: block;
+        overflow-x: hidden;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        margin-left: 0;
+        flex-wrap: wrap;
+        width: 290px;
+        overflow: hidden;
+    }
+
+    .container h3 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .container button {
+        margin-top: 30px;
+        padding: 20px;
+        width: 250px;
+        margin-left: 20px;
+        border: 1px solid red;
+        background: red;
+        transition: all ease 0.5s;
+        color: white;
+        font-size: 20px;
+    }
+
+    .container button:hover {
+        background: transparent;
+        border: 1px solid red;
+        color: red;
+    }
+
+    .container input {
+        margin-top: 20px;
+        padding: 15px;
+        width: 250px;
+        height: 30px;
+        margin-left: 5px;
+        border-bottom: 1px solid black;
+        font-size: 18px;
+        flex-wrap: wrap;
+    }
+
+    .container~input {
+        border: none;
+    }
+
+    .popup {
+        width: 280px;
+        padding: 15px;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin-top: 100px;
+        margin-left: 0;
+        display: none;
+        position: absolute;
+        transition: all ease 1s;
+        z-index: 99;
+        background: rgb(100, 100, 241);
+    }
+
+    .popup i {
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 250px;
+        font-size: 25px;
+        color: rgb(82, 80, 80);
+        transition: all ease 0.5s;
+    }
+
+    .popup i:hover {
+        color: black;
+    }
+
+    .popup p {
+        font-size: 20px;
+        padding: 15px;
+        color: white;
+    }
+
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 12px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .container {
+        margin-top: 100px;
+        display: block;
+        overflow-x: hidden;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        margin-left: 0;
+        flex-wrap: wrap;
+        width: 290px;
+        overflow: hidden;
+    }
+
+    .container h3 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .container button {
+        margin-top: 30px;
+        padding: 20px;
+        width: 250px;
+        margin-left: 20px;
+        border: 1px solid red;
+        background: red;
+        transition: all ease 0.5s;
+        color: white;
+        font-size: 20px;
+    }
+
+    .container button:hover {
+        background: transparent;
+        border: 1px solid red;
+        color: red;
+    }
+
+    .container input {
+        margin-top: 20px;
+        padding: 15px;
+        width: 250px;
+        height: 30px;
+        margin-left: 5px;
+        border-bottom: 1px solid black;
+        font-size: 18px;
+        flex-wrap: wrap;
+    }
+
+    .container~input {
+        border: none;
+    }
+
+    .popup {
+        width: 280px;
+        padding: 15px;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin-top: 100px;
+        margin-left: 0;
+        display: none;
+        position: absolute;
+        transition: all ease 1s;
+        z-index: 99;
+        background: rgb(100, 100, 241);
+    }
+
+    .popup i {
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 250px;
+        font-size: 25px;
+        color: rgb(82, 80, 80);
+        transition: all ease 0.5s;
+    }
+
+    .popup i:hover {
+        color: black;
+    }
+
+    .popup p {
+        font-size: 20px;
+        padding: 15px;
+        color: white;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+    html {
+        font-size: 12px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .container {
+        margin-top: 100px;
+        display: block;
+        overflow-x: hidden;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        margin-left: 0;
+        flex-wrap: wrap;
+        width: 290px;
+        overflow: hidden;
+    }
+
+    .container h3 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .container button {
+        margin-top: 30px;
+        padding: 20px;
+        width: 250px;
+        margin-left: 20px;
+        border: 1px solid red;
+        background: red;
+        transition: all ease 0.5s;
+        color: white;
+        font-size: 20px;
+    }
+
+    .container button:hover {
+        background: transparent;
+        border: 1px solid red;
+        color: red;
+    }
+
+    .container input {
+        margin-top: 20px;
+        padding: 15px;
+        width: 250px;
+        height: 30px;
+        margin-left: 5px;
+        border-bottom: 1px solid black;
+        font-size: 18px;
+        flex-wrap: wrap;
+    }
+
+    .container~input {
+        border: none;
+    }
+
+    .popup {
+        width: 280px;
+        padding: 15px;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin-top: 100px;
+        margin-left: 0;
+        display: none;
+        position: absolute;
+        transition: all ease 1s;
+        z-index: 99;
+        background: rgb(100, 100, 241);
+    }
+
+    .popup i {
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 250px;
+        font-size: 25px;
+        color: rgb(82, 80, 80);
+        transition: all ease 0.5s;
+    }
+
+    .popup i:hover {
+        color: black;
+    }
+
+    .popup p {
+        font-size: 20px;
+        padding: 15px;
+        color: white;
+    }
+
+}
+@media (max-width: 780px) {
+    html {
+        font-size: 12px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .container {
+        margin-top: 100px;
+        display: block;
+        overflow-x: hidden;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        margin-left: 0;
+        flex-wrap: wrap;
+        width: 290px;
+        overflow: hidden;
+    }
+
+    .container h3 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .container button {
+        margin-top: 30px;
+        padding: 20px;
+        width: 250px;
+        margin-left: 20px;
+        border: 1px solid red;
+        background: red;
+        transition: all ease 0.5s;
+        color: white;
+        font-size: 20px;
+    }
+
+    .container button:hover {
+        background: transparent;
+        border: 1px solid red;
+        color: red;
+    }
+
+    .container input {
+        margin-top: 20px;
+        padding: 15px;
+        width: 250px;
+        height: 30px;
+        margin-left: 5px;
+        border-bottom: 1px solid black;
+        font-size: 18px;
+        flex-wrap: wrap;
+    }
+
+    .container~input {
+        border: none;
+    }
+
+    .popup {
+        width: 280px;
+        padding: 15px;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin-top: 100px;
+        margin-left: 0;
+        display: none;
+        position: absolute;
+        transition: all ease 1s;
+        z-index: 99;
+        background: rgb(100, 100, 241);
+    }
+
+    .popup i {
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 250px;
+        font-size: 25px;
+        color: rgb(82, 80, 80);
+        transition: all ease 0.5s;
+    }
+
+    .popup i:hover {
+        color: black;
+    }
+
+    .popup p {
+        font-size: 20px;
+        padding: 15px;
+        color: white;
+    }
+
+}
+@media (max-width: 860px) {
+    html {
+        font-size: 12px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .container {
+        margin-top: 100px;
+        display: block;
+        overflow-x: hidden;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        margin-left: 0;
+        flex-wrap: wrap;
+        width: 290px;
+        overflow: hidden;
+    }
+
+    .container h3 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .container button {
+        margin-top: 30px;
+        padding: 20px;
+        width: 250px;
+        margin-left: 20px;
+        border: 1px solid red;
+        background: red;
+        transition: all ease 0.5s;
+        color: white;
+        font-size: 20px;
+    }
+
+    .container button:hover {
+        background: transparent;
+        border: 1px solid red;
+        color: red;
+    }
+
+    .container input {
+        margin-top: 20px;
+        padding: 15px;
+        width: 250px;
+        height: 30px;
+        margin-left: 5px;
+        border-bottom: 1px solid black;
+        font-size: 18px;
+        flex-wrap: wrap;
+    }
+
+    .container~input {
+        border: none;
+    }
+
+    .popup {
+        width: 280px;
+        padding: 15px;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin-top: 100px;
+        margin-left: 0;
+        display: none;
+        position: absolute;
+        transition: all ease 1s;
+        z-index: 99;
+        background: rgb(100, 100, 241);
+    }
+
+    .popup i {
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 250px;
+        font-size: 25px;
+        color: rgb(82, 80, 80);
+        transition: all ease 0.5s;
+    }
+
+    .popup i:hover {
+        color: black;
+    }
+
+    .popup p {
+        font-size: 20px;
+        padding: 15px;
+        color: white;
+    }
+
+}
+@media (max-width: 1060px) {
+    html {
+        font-size: 12px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .container {
+        margin-top: 100px;
+        display: block;
+        overflow-x: hidden;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        margin-left: 0;
+        flex-wrap: wrap;
+        width: 290px;
+        overflow: hidden;
+    }
+
+    .container h3 {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .container button {
+        margin-top: 30px;
+        padding: 20px;
+        width: 250px;
+        margin-left: 20px;
+        border: 1px solid red;
+        background: red;
+        transition: all ease 0.5s;
+        color: white;
+        font-size: 20px;
+    }
+
+    .container button:hover {
+        background: transparent;
+        border: 1px solid red;
+        color: red;
+    }
+
+    .container input {
+        margin-top: 20px;
+        padding: 15px;
+        width: 250px;
+        height: 30px;
+        margin-left: 5px;
+        border-bottom: 1px solid black;
+        font-size: 18px;
+        flex-wrap: wrap;
+    }
+
+    .container~input {
+        border: none;
+    }
+
+    .popup {
+        width: 280px;
+        padding: 15px;
+        height: 400px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin-top: 100px;
+        margin-left: 0;
+        display: none;
+        position: absolute;
+        transition: all ease 1s;
+        z-index: 99;
+        background: rgb(100, 100, 241);
+    }
+
+    .popup i {
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 250px;
+        font-size: 25px;
+        color: rgb(82, 80, 80);
+        transition: all ease 0.5s;
+    }
+
+    .popup i:hover {
+        color: black;
+    }
+
+    .popup p {
+        font-size: 20px;
+        padding: 15px;
+        color: white;
+    }
+
+}
