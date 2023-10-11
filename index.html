@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> if else </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Validate Marks</h3>
+        <hr>
+        <input type="text" id="num1" placeholder="Enter Your Math Marks"><br>
+        <input type="text" id="num2" placeholder="Enter Your Science Marks"><br>
+        <input type="text" id="num3" placeholder="Enter Your English Marks"><br>
+
+        <button id="btn" onclick="check(),pop()">Check</button>
+
+    </div>
+
+    <!-- Result Popup -->
+    <div class="popup" id="popup">
+        <i class='bx bx-x' onclick="popcls()"></i>
+        <p>Math Marks :- <span id="math"></span></p>
+        <p>Science Marks :- <span id="science"></span></p>
+        <p>English Marks :- <span id="eng"></span></p>
+        <p>Total Marks :- <span id="tm"></span></p>
+        <p>Result :- <span id="result-card"></span></p>
+    </div>
+
+    <!-- Javascript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
